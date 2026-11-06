@@ -1,0 +1,15 @@
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\bin\Debug\net10.0\bol1ej4.exe
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\bin\Debug\net10.0\bol1ej4.deps.json
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\bin\Debug\net10.0\bol1ej4.runtimeconfig.json
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\bin\Debug\net10.0\bol1ej4.dll
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\bin\Debug\net10.0\bol1ej4.pdb
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.GeneratedMSBuildEditorConfig.editorconfig
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.AssemblyInfoInputs.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.AssemblyInfo.cs
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.csproj.CoreCompileInputs.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.dll
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\refint\bol1ej4.dll
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.pdb
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.genruntimeconfig.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\ref\bol1ej4.dll
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej4\obj\Debug\net10.0\bol1ej4.csproj.Up2Date

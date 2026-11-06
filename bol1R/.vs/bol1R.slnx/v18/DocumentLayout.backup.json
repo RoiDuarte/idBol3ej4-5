@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|d:\\dam\\segundo\\id\\proxectos\\bol1r\\bol1ej7\\bol1ej8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|solutionrelative:bol1ej7\\bol1ej8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|d:\\dam\\segundo\\id\\proxectos\\bol1r\\bol1ej7\\planeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|solutionrelative:bol1ej7\\planeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|d:\\dam\\segundo\\id\\proxectos\\bol1r\\bol1ej7\\cometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|solutionrelative:bol1ej7\\cometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|d:\\dam\\segundo\\id\\proxectos\\bol1r\\bol1ej7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|solutionrelative:bol1ej7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|d:\\dam\\segundo\\id\\proxectos\\bol1r\\bol1ej7\\astro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{574C4861-41D0-41CC-A827-D0B94B131600}|bol1ej7\\bol1ej7.csproj|solutionrelative:bol1ej7\\astro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Planeta.cs",
+              "DocumentMoniker": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Planeta.cs",
+              "RelativeDocumentMoniker": "bol1ej7\\Planeta.cs",
+              "ToolTip": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Planeta.cs",
+              "RelativeToolTip": "bol1ej7\\Planeta.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswCAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T08:40:43.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Program.cs",
+              "RelativeDocumentMoniker": "bol1ej7\\Program.cs",
+              "ToolTip": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Program.cs",
+              "RelativeToolTip": "bol1ej7\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T08:40:39.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cometa.cs",
+              "DocumentMoniker": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Cometa.cs",
+              "RelativeDocumentMoniker": "bol1ej7\\Cometa.cs",
+              "ToolTip": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Cometa.cs",
+              "RelativeToolTip": "bol1ej7\\Cometa.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T08:40:33.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Astro.cs",
+              "DocumentMoniker": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Astro.cs",
+              "RelativeDocumentMoniker": "bol1ej7\\Astro.cs",
+              "ToolTip": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\Astro.cs",
+              "RelativeToolTip": "bol1ej7\\Astro.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T08:38:39.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bol1ej8.cs",
+              "DocumentMoniker": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\bol1ej8.cs",
+              "RelativeDocumentMoniker": "bol1ej7\\bol1ej8.cs",
+              "ToolTip": "D:\\DAM\\segundo\\ID\\PROXECTOS\\bol1R\\bol1ej7\\bol1ej8.cs",
+              "RelativeToolTip": "bol1ej7\\bol1ej8.cs",
+              "ViewState": "AgIAAFIBAAAAAAAAAAAAAFYBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T07:50:51.146Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

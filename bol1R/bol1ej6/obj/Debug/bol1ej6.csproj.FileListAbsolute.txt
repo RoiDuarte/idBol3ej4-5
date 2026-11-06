@@ -1,0 +1,10 @@
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\bin\Debug\bol1ej6.exe.config
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\bin\Debug\bol1ej6.exe
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\bin\Debug\bol1ej6.pdb
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.csproj.AssemblyReference.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.Form1.resources
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.Properties.Resources.resources
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.csproj.GenerateResource.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.csproj.CoreCompileInputs.cache
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.exe
+E:\DAM\2º\ID\PROXECTOS\bol1R\bol1ej6\obj\Debug\bol1ej6.pdb

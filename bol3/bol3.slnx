@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../bol3ej2/bol3ej2.csproj" Id="344b4ee3-1430-4161-857a-a6d5dc4f5dc0" />
+  <Project Path="../bol3ej3/bol3ej3.csproj" Id="9f989916-b44f-4143-8d54-b2b9baaa8591" />
+  <Project Path="../bol3ej4/bol3ej4.csproj" Id="00ec3b60-abd6-4a4a-9435-fc4cd6b0f216" />
+  <Project Path="../bol3ej5/bol3ej5.csproj" Id="a5415b83-d5e7-4f26-8461-528e9f0dc05d" />
+  <Project Path="bol3ej1.csproj" Id="3a0ba392-0d95-48a0-8dcc-7e0b2c72f96d" />
+</Solution>

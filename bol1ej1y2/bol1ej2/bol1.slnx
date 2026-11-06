@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../../bol1ej3/bol1ej3/bol1ej3.csproj" Id="ef324f9c-1560-4fc4-8402-9919acd81286" />
+  <Project Path="../bol1ej1/bol1ej1/bol1ej1.csproj" Id="c38bdcfd-844a-4c79-92c2-a793b73c1100" />
+  <Project Path="bol1ej2/bol1ej2.csproj" />
+</Solution>

@@ -1,0 +1,7 @@
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\bin\Debug\bol1ej7.exe.config
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\bin\Debug\bol1ej7.exe
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\bin\Debug\bol1ej7.pdb
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\obj\Debug\bol1ej7.csproj.AssemblyReference.cache
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\obj\Debug\bol1ej7.csproj.CoreCompileInputs.cache
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\obj\Debug\bol1ej7.exe
+D:\DAM\segundo\ID\PROXECTOS\bol1R\bol1ej7\obj\Debug\bol1ej7.pdb
