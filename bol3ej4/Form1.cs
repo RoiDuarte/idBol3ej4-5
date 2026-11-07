@@ -20,10 +20,10 @@ namespace bol3ej4//TODO selección múltiple na lista 1 (teño que cambiar varia
         public bol3ej4()
         {
             InitializeComponent();
-            label1.Text = "En la lista 1 hay "+ listBox1.Items.Count + " elementos";
-            label2.Text = "Indices seleccionados: Ninguno";
+            lblInformativa1.Text = "En la lista 1 hay "+ lstLista1.Items.Count + " elementos";
+            lblInformativa2.Text = "Indices seleccionados: Ninguno";
             indice=textoCompleto.Length - 1;
-            toolTip1.SetToolTip(this.listBox2, listBox2.Items.Count.ToString());
+            toolTip1.SetToolTip(this.lstLista2, lstLista2.Items.Count.ToString());
 
 
 
@@ -32,89 +32,88 @@ namespace bol3ej4//TODO selección múltiple na lista 1 (teño que cambiar varia
 
         private void BtnAnhadir_Click(object sender, EventArgs e)
         {
-            string nuevoElemento = textBox1.Text.Trim();
+            string nuevoElemento = txtTexto.Text.Trim();
 
-            if (rbListBox1.Checked)
-            {
-                if (!listBox1.Items.Contains(nuevoElemento) && !string.IsNullOrEmpty(nuevoElemento))
+                if (!lstLista1.Items.Contains(nuevoElemento) && !string.IsNullOrEmpty(nuevoElemento))
                 {
-                    listBox1.Items.Add(nuevoElemento);
+                    lstLista1.Items.Add(nuevoElemento);
                 }
-            }
-            else if (rbListBox2.Checked) 
-            {
-
-                if (!listBox2.Items.Contains(nuevoElemento) && !string.IsNullOrEmpty(nuevoElemento))
-                {
-                    listBox2.Items.Add(nuevoElemento);
-                }
-            }
-
-
-
-            label1.Text = "En la lista 1 hay " + listBox1.Items.Count + " elementos";
-            toolTip1.SetToolTip(this.listBox2, listBox2.Items.Count.ToString());
+   
+            lblInformativa1.Text = "En la lista 1 hay " + lstLista1.Items.Count + " elementos";
+            toolTip1.SetToolTip(this.lstLista2, lstLista2.Items.Count.ToString());
 
         }
 
         private void BtnQuitar_Click(object sender, EventArgs e)
         {
             
-            if (rbListBox1.Checked && listBox1.SelectedItem != null)
+            if (rbListBox1.Checked && lstLista1.SelectedItem != null)
             {
                 btnQuitar.Text = "Elimina de 1";
-                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
-            }else if (rbListBox2.Checked && listBox2.SelectedItem != null)
+                for (int i = lstLista1.SelectedIndices.Count-1; i >=0 ; i--)
+                {
+                    lstLista1.Items.RemoveAt(lstLista1.SelectedIndices[i]);
+                }
+                
+            }else if (rbListBox2.Checked && lstLista2.SelectedItem != null)
             {
                 btnQuitar.Text = "Elimina de 2";
 
-                for (int i = listBox2.SelectedIndices.Count-1; i >=0 ; i--)
+                for (int i = lstLista2.SelectedIndices.Count-1; i >=0 ; i--)
                 {
-                    listBox2.Items.RemoveAt(listBox2.SelectedIndices[i]);
+                    lstLista2.Items.RemoveAt(lstLista2.SelectedIndices[i]);
                 }
 
             }
 
-            label1.Text = "En la lista 1 hay " + listBox1.Items.Count + " elementos";
-            toolTip1.SetToolTip(this.listBox2, listBox2.Items.Count.ToString());
+            lblInformativa1.Text = "En la lista 1 hay " + lstLista1.Items.Count + " elementos";
+            toolTip1.SetToolTip(this.lstLista2, lstLista2.Items.Count.ToString());
 
 
         }
 
         private void BtnTraspasa_Click(object sender, EventArgs e)
         {
-            if (rb1a2.Checked && listBox1.SelectedItem!=null)
+            if (rb1a2.Checked && lstLista1.SelectedItem!=null)
             {
-                listBox2.Items.Add(listBox1.SelectedItem);
-                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
-            }else if (rb2a1.Checked && listBox2.SelectedItem!=null)
+                for (int i = lstLista1.SelectedIndices.Count-1; i >=0; i--)
+                {
+                    lstLista2.Items.Add(lstLista1.SelectedIndices[i]);
+                    lstLista1.Items.RemoveAt(lstLista1.SelectedIndices[i]);
+                }
+                
+            }else if (rb2a1.Checked && lstLista2.SelectedItem!=null)
             {
-                listBox1.Items.Add(listBox2.SelectedItem);
-                listBox2.Items.RemoveAt(listBox2.SelectedIndex);
+                for (int i = lstLista2.SelectedIndices.Count-1; i >=0 ; i--)
+                {
+                    lstLista1.Items.Add(lstLista2.SelectedIndices[i]);
+                    lstLista2.Items.RemoveAt(lstLista2.SelectedIndices[i]);
+                }
+                
             }
 
-            label1.Text = "En la lista 1 hay " + listBox1.Items.Count + " elementos";
-            toolTip1.SetToolTip(this.listBox2, listBox2.Items.Count.ToString());
+            lblInformativa1.Text = "En la lista 1 hay " + lstLista1.Items.Count + " elementos";
+            toolTip1.SetToolTip(this.lstLista2, lstLista2.Items.Count.ToString());
 
 
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstLista1_IndiceCambiado(object sender, EventArgs e)
         {
 
             string resultado = "Indices seleccionados: ";
-            if (listBox1.SelectedIndex != -1)
+            if (lstLista1.SelectedIndex != -1)
             {
-                foreach (int indice in listBox1.SelectedIndices)
+                foreach (int indice in lstLista1.SelectedIndices)
                 {
                     resultado += indice + " ";
                 }
-                label2.Text = resultado;
+                lblInformativa2.Text = resultado;
             }
             else
             {
-                label2.Text = "Indices seleccionados: Ninguno";
+                lblInformativa2.Text = "Indices seleccionados: Ninguno";
             }
         }
 
@@ -140,6 +139,6 @@ namespace bol3ej4//TODO selección múltiple na lista 1 (teño que cambiar varia
 
         }
 
-       
+        
     }
 }

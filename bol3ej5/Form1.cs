@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -11,8 +12,12 @@ using System.Windows.Forms;
 
 namespace bol3ej5//Funcionamiento con teclas. Titulo icono. Taborder. Completar grabar/mostrar. Menu con ALT y atajos. Quitar los ifs innecesarios de comprobacion de tipo de sender.
 {
+    
     public partial class Form1 : Form
     {
+
+        private Form2 frmGrabarNumero = null;
+        private Form3 frmAgenda = null;
 
         public Form1()
         {
@@ -36,7 +41,8 @@ namespace bol3ej5//Funcionamiento con teclas. Titulo icono. Taborder. Completar 
                 else if (i == 10)
                 {
                     btn.Text = "0";
-                }else
+                }
+                else
                 {
                     btn.Text = "#";
                 }
@@ -55,54 +61,53 @@ namespace bol3ej5//Funcionamiento con teclas. Titulo icono. Taborder. Completar 
                 btn.Click += new System.EventHandler(this.btnClick);
                 btn.MouseEnter += new System.EventHandler(this.btnMouseEnter);
                 btn.MouseLeave += new System.EventHandler(this.btnMouseLeave);
-                
+
                 this.Controls.Add(btn);
-                
+
             }
         }
 
-       
+
 
 
         private void btnMouseLeave(object sender, EventArgs e)
         {
-            if (sender is Button btn)
+            Button btn = (Button)sender;
+
+            if (btn.BackColor != Color.Yellow)
             {
-                if (btn.BackColor!=Color.Yellow)
-                {
-                    btn.BackColor = Color.White;
-                }
-                
+                btn.BackColor = Color.White;
             }
+
+
         }
 
         private void btnMouseEnter(object sender, EventArgs e)
         {
-            if (sender is Button btn)
+
+            Button btn = (Button)sender;
+            if (btn.BackColor != Color.Yellow)
             {
-                if (btn.BackColor!=Color.Yellow)
-                {
-                    btn.BackColor = Color.Red;
-                }
-                
+                btn.BackColor = Color.Red;
             }
+
         }
+
 
         private void btnClick(object sender, EventArgs e)
         {
 
-            if (sender is Button btn)
-            {
-                textBox1.Text += btn.Text;
-                btn.BackColor = Color.Yellow;
+            Button btn = (Button)sender;
+            txtNumero.Text += btn.Text;
+            btn.BackColor = Color.Yellow;
 
-            }
-            
+
+
         }
 
         public void reset()
         {
-            textBox1.Text = "";
+            txtNumero.Text = "";
 
             foreach (Control c in this.Controls)
             {
@@ -120,14 +125,59 @@ namespace bol3ej5//Funcionamiento con teclas. Titulo icono. Taborder. Completar 
 
         private void grabarNumeroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2(this.textBox1.Text);
-            f.ShowDialog();
+
+            if (string.IsNullOrEmpty(txtNumero.Text))
+            {
+                return;
+            }
+            if (frmGrabarNumero ==null || frmGrabarNumero.IsDisposed)
+            {
+                frmGrabarNumero = new Form2();
+
+                frmGrabarNumero.btnAceptar.Click += BtnAceptarForm2_Click;
+                
+                frmGrabarNumero.Show();
+
+
+            }
+        }
+
+        private void BtnAceptarForm2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (!string.IsNullOrEmpty(txtNumero.Text) && !string.IsNullOrEmpty(frmGrabarNumero.txtNombre.Text))
+                {
+                    string directory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                    // Environment.GetEnvironmentVariable("homepath") levame ao disco duro E: en vez de ao C:, entón non me funciona
+                    string fullName = directory + "\\" + "contactos.txt";
+
+                    using (StreamWriter sw = new StreamWriter(fullName, true))
+                    {
+                        sw.WriteLine($"{frmGrabarNumero.txtNombre.Text,-25}{txtNumero.Text,-15}");
+                    }
+
+                    frmGrabarNumero.Close();
+                }
+                else
+                {
+                    MessageBox.Show("La caja de texto de Nombre esta vacia.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (IOException a)
+            {
+                MessageBox.Show("No se pudo crear el archivo: "+a.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void mostrarAgendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
-            f.ShowDialog();
+            if (frmAgenda == null || frmAgenda.IsDisposed)
+            {
+                frmAgenda = new Form3();
+                frmAgenda.Show();
+            }  
         }
 
 
@@ -145,7 +195,7 @@ namespace bol3ej5//Funcionamiento con teclas. Titulo icono. Taborder. Completar 
                 if (c is Button btn && btn.Text == tecla)
                 {
                     btn.PerformClick();
-                   // e.Handled = true; //mirar ben como vai isto
+                    // e.Handled = true; //mirar ben como vai isto
 
                 }
             }

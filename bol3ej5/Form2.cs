@@ -13,36 +13,47 @@ namespace bol3ej5
 {
     public partial class Form2 : Form
     {
-        string numero;
+        //string numero;
+        //public bool guardadoAceptado = false;
+        //public string txtNombre = null;
         public Form2()
         {
             InitializeComponent();
         }
 
-        public Form2(string texto) {
-            InitializeComponent();
-            numero = texto;
-        }
+        //public Form2(string texto)
+        //{
+        //    InitializeComponent();
+        //    //numero = texto;
+        //}
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
-        {
-            
-            if (!string.IsNullOrEmpty(numero))
-            {
+        //private void btnAceptar_Click(object sender, EventArgs e)
+        //{
+        //    //this.Close();
+        //    //guardadoAceptado = true;
+        //    //txtNombre = textBox1.Text;
+        //}
 
-                //textoActual += textoActual + "\n" + textBox1.Text ++ numero;
-                String agenda = $"Nombre: {textBox1.Text} Numero: {numero}";
-                
+        //private void BtnAceptar_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
 
-                string fullname= "D:\\DAM\\segundo\\ID\\ejercicio5.txt";
-                StreamWriter s = new StreamWriter(fullname, true); 
-                s.WriteLine(agenda);
-                s.Close();
+        //        if (!string.IsNullOrEmpty(numero))
+        //        {
+
+        //            using (StreamWriter sw = new StreamWriter ("contactos.txt", true))
+        //            {
+        //                sw.WriteLine(numero);
+        //            }
+        //        }
+        //    }
+        //    catch (IOException ex)
+        //    {
+        //        Console.WriteLine("El archivo aun no existe");
+        //    }
 
 
-            }
-
-            this.Close();
-        }
+        //}
     }
 }

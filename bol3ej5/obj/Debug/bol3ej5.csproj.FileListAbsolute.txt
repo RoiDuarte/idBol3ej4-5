@@ -21,3 +21,4 @@ D:\DAM\segundo\ID\PROXECTOS\bol3ej5\obj\Debug\bol3ej5.csproj.GenerateResource.ca
 D:\DAM\segundo\ID\PROXECTOS\bol3ej5\obj\Debug\bol3ej5.csproj.CoreCompileInputs.cache
 D:\DAM\segundo\ID\PROXECTOS\bol3ej5\obj\Debug\bol3ej5.exe
 D:\DAM\segundo\ID\PROXECTOS\bol3ej5\obj\Debug\bol3ej5.pdb
+E:\DAM\segundo\ID\PROXECTOS\bol3ej5\obj\Debug\bol3ej5.Form3.resources

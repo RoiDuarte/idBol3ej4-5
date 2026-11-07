@@ -29,31 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAgenda = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtAgenda
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(900, 562);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtAgenda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAgenda.Enabled = false;
+            this.txtAgenda.Location = new System.Drawing.Point(0, 0);
+            this.txtAgenda.Multiline = true;
+            this.txtAgenda.Name = "txtAgenda";
+            this.txtAgenda.ReadOnly = true;
+            this.txtAgenda.Size = new System.Drawing.Size(800, 450);
+            this.txtAgenda.TabIndex = 0;
+            this.txtAgenda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAgenda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form3";
-            this.Text = "agenda";
+            this.Text = "Grabar Numero";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +60,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAgenda;
     }
 }

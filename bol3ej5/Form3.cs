@@ -14,25 +14,33 @@ namespace bol3ej5
     public partial class Form3 : Form
     {
 
-        
+
         public Form3()
         {
             InitializeComponent();
-            String fullname= "D:\\DAM\\segundo\\ID\\ejercicio5.txt";
+            string directory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string fullName = directory + "\\" + "contactos.txt";
 
-            if (File.Exists(fullname))
+            if (!File.Exists(fullName))
             {
-                StreamReader sr = new StreamReader(fullname);
-                textBox1.Text = sr.ReadToEnd();
-                sr.Close();
+                MessageBox.Show("Aun no hay contactos registrados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            
+            try
+            {
 
-        }
+                using (StreamReader sr = new StreamReader(fullName))
+                {
+                    string contenidoCompleto = sr.ReadToEnd();
+                    txtAgenda.Text = contenidoCompleto;
+                    
+                }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show("Error al leer el archivo: "+ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
